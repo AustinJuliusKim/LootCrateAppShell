@@ -1,7 +1,6 @@
 angular.module('starter.controllers', [])
-.controller('GameStatsCtrl', function($scope) {})
+.controller('GameStatesCtrl', function($scope) {})
 .controller('DashCtrl', function($scope) {})
-
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -10,7 +9,6 @@ angular.module('starter.controllers', [])
   //
   //$scope.$on('$ionicView.enter', function(e) {
   //});
-
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
     Chats.remove(chat);
@@ -23,6 +21,7 @@ angular.module('starter.controllers', [])
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
-    enableFriends: true
+    enableFriends: true,
+    enableGeolocation: false
   };
 });

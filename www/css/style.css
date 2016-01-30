@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+/*#game-stats {
+  padding-top: 4em;
+}
+#game-stats-bar {
+  progress[value] {
+     Reset the default appearance 
+    -webkit-appearance: none;
+     appearance: none;
+
+    width: 250px;
+    height: 20px;
+  }
+}*/

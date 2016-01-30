@@ -5,16 +5,10 @@ navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
   <!-- Game Stats Tab -->
-  <ion-tab
-    title="Game Stats"
-    icon-off="ion-ios-game-controller-a-outline"
-    icon-on="ion-ios-game-controller-a"
-    href="#/tab/game-stats"
-    on-select="onTabSelected()"
-    on-deselect="onTabDeselected()">
-    <ion-nav-view name="tab-game-stats" animation="slide-left-right">
-    </ion-nav-view>
+  <ion-tab title="Game Stats" icon-off="ion-ios-game-controller-a-outline" icon-on="ion-ios-game-controller-a" href="#/tab/game-stats">
+    <ion-nav-view name="tab-game-stats"></ion-nav-view>
   </ion-tab>
+
   <!-- Dashboard Tab -->
   <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash">
     <ion-nav-view name="tab-dash"></ion-nav-view>

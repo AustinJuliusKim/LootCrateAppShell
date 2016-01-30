@@ -1,0 +1,86 @@
+$orange: #ff5f00;
+
+#game-stats {
+  .looter-badge {
+    position: relative;
+    z-index: 0;
+    .looter-avatar {
+      border: 1px solid $orange;
+      background: url('../img/hackathon-assets/bg-gold.png') no-repeat center;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 28px;
+      margin: 0;
+    }
+    p {
+      font-size: 10px;
+      color: black;
+      margin: 0;
+      line-height: 1.2;
+    }
+    span {
+      padding-right: 5px;
+    }
+  }
+  .ticket-box {
+    position: relative;
+    top: -245px;
+    right: -270px;
+    width: 50%;
+    z-index: 2;
+    img {
+      width: 42%;
+      position: absolute; 
+    }
+  }
+  .game-stats-bar {
+    background: url('../img/hackathon-assets/XpBar_Grey2.png') no-repeat center center;
+    background-size: contain;
+    position: relative;
+    padding: 25px 20px 25px 0;
+    top: -65px;
+    z-index: 10;
+    width: 85%;
+    progress[value] {
+      /* Reset the default appearance */
+      padding-left: 3px;
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 13px;
+    }
+    progress[value]::-webkit-progress-bar {
+      // background-color: rgba(0,0,0,0);
+      background-color: #4B4A4A;
+      // border-radius: 10px;
+      border-radius: 25px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    }
+    progress[value]::-webkit-progress-value {
+      background-color: $orange;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      background-image:
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, #f44, $orange, yellow);
+      @-webkit-keyframes animate-stripes {
+         100% { background-position: -100px 0px; }
+      }
+      @keyframes animate-stripes {
+         100% { background-position: -100px 0px; }
+      }
+      -webkit-animation: animate-stripes 5s linear infinite;
+      animation: animate-stripes 5s linear infinite;
+    }  
+  }
+  .rewards {
+    position: relative;
+    top: -120px;
+  }
+}
