@@ -9733,6 +9733,19 @@ a.button {
 
 #game-stats {
   background-color: #d6d6d6; }
+  #game-stats .lootbadge {
+    position: absolute;
+    display: inline-block;
+    z-index: 12;
+    top: 60px; }
+    #game-stats .lootbadge img {
+      width: 15%; }
+    #game-stats .lootbadge.elite-on {
+      left: -10px;
+      top: 75px; }
+    #game-stats .lootbadge.master-off {
+      right: -320px;
+      top: 70px; }
   #game-stats .looter-badge {
     position: relative;
     z-index: 0;
@@ -9772,7 +9785,7 @@ a.button {
     top: -85px;
     left: 5px;
     z-index: 10;
-    width: 75%; }
+    width: 95%; }
     #game-stats .game-stats-bar progress[value] {
       /* Reset the default appearance */
       padding-left: 3px;
@@ -9831,7 +9844,7 @@ a.button {
     background-size: cover; }
 
 #pick-your-crate .row {
-  height: 33%; }
+  height: 50%; }
 
 #pick-your-crate a {
   height: 100%;
@@ -9841,22 +9854,22 @@ a.button {
 
 #pick-your-crate .loot-anime {
   height: 100%;
-  background: url("../img/hackathon-assets/Product_Anime.jpg") no-repeat center;
+  background: url("../img/hackathon-assets/Product_Anime.jpg") no-repeat left center;
   background-size: cover; }
 
 #pick-your-crate .loot-gaming {
   height: 100%;
-  background: url("../img/hackathon-assets/Product_Gaming.jpg") no-repeat center;
+  background: url("../img/hackathon-assets/Product_Gaming.jpg") no-repeat left center;
   background-size: cover; }
 
 #pick-your-crate .loot-pets {
   height: 100%;
-  background: url("../img/hackathon-assets/Product_Pets.jpg") no-repeat center;
+  background: url("../img/hackathon-assets/Product_Pets.jpg") no-repeat left center;
   background-size: cover; }
 
 #pick-your-crate .loot-lu {
   height: 100%;
-  background: url("../img/hackathon-assets/Product_Lvlup.jpg") no-repeat center;
+  background: url("../img/hackathon-assets/Product_Lvlup.jpg") no-repeat left center;
   background-size: cover; }
 
 #plans {
