@@ -96,18 +96,22 @@ $white: #ffffff;
 
     .item {
       background-color: $gold;
-      height: 89px;
+      height: auto;
+      width: 100%;
       &.anime-sub {
+        width: 100%;
         background: url('../img/hackathon-assets/anime-sub.png') no-repeat;
-        background-size: contain;
+        background-size: cover;
       }
       &.loot-sub {
+        width: 100%;
         background: url('../img/hackathon-assets/loot-sub.png') no-repeat;
-        background-size: contain;
+        background-size: cover;
       }
       &.lu-sub {
+        width: 100%;
         background: url('../img/hackathon-assets/lu-sub.png') no-repeat;
-        background-size: contain;
+        background-size: cover;
       }
     }
     .item-text-wrap {
