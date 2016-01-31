@@ -28,6 +28,10 @@ $white: #ffffff;
       margin: 0;
       line-height: 1.2;
     }
+    :nth-child(3){
+      font-weight: 700;
+      color: $orange;
+    }
     span {
       padding-right: 5px;
     }
@@ -134,12 +138,34 @@ $white: #ffffff;
 
 #pick-your-crate {
   .row {
-    border: 1px solid $black;
+    // border: 1px solid $black;
     height: 33%;
   }
-  .col {
+  a {
     height: 100%;
-    border: 1px solid $black;
+    width: 50%;
+    margin: 1px;
+    padding-top: 1px;
+  }
+  .loot-anime {
+    height: 100%;
+    background: url('../img/hackathon-assets/Product_Anime.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .loot-gaming {
+    height: 100%;
+    background: url('../img/hackathon-assets/Product_Gaming.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .loot-pets {
+    height: 100%;
+    background: url('../img/hackathon-assets/Product_Pets.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .loot-lu {
+    height: 100%;
+    background: url('../img/hackathon-assets/Product_Lvlup.jpg') no-repeat center;
+    background-size: cover;
   }
 }
 

@@ -9750,6 +9750,9 @@ a.button {
       color: #222;
       margin: 0;
       line-height: 1.2; }
+    #game-stats .looter-badge :nth-child(3) {
+      font-weight: 700;
+      color: #ff5f00; }
     #game-stats .looter-badge span {
       padding-right: 5px; }
   #game-stats .ticket-box {
@@ -9828,12 +9831,33 @@ a.button {
     background-size: cover; }
 
 #pick-your-crate .row {
-  border: 1px solid #222;
   height: 33%; }
 
-#pick-your-crate .col {
+#pick-your-crate a {
   height: 100%;
-  border: 1px solid #222; }
+  width: 50%;
+  margin: 1px;
+  padding-top: 1px; }
+
+#pick-your-crate .loot-anime {
+  height: 100%;
+  background: url("../img/hackathon-assets/Product_Anime.jpg") no-repeat center;
+  background-size: cover; }
+
+#pick-your-crate .loot-gaming {
+  height: 100%;
+  background: url("../img/hackathon-assets/Product_Gaming.jpg") no-repeat center;
+  background-size: cover; }
+
+#pick-your-crate .loot-pets {
+  height: 100%;
+  background: url("../img/hackathon-assets/Product_Pets.jpg") no-repeat center;
+  background-size: cover; }
+
+#pick-your-crate .loot-lu {
+  height: 100%;
+  background: url("../img/hackathon-assets/Product_Lvlup.jpg") no-repeat center;
+  background-size: cover; }
 
 #plans {
   background-color: #d6d6d6; }
