@@ -44,7 +44,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-game-stats': {
         templateUrl: 'templates/tab-game-stats.html',
-        controller: 'GameStatesCtrl'
+        controller: 'GameStatCtrl'
       }
     }
   })

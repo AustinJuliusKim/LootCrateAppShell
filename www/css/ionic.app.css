@@ -9731,63 +9731,63 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-#game-stats .looter-badge {
-  position: relative;
-  z-index: 0;
-  padding-bottom: 20px;
-  background-color: #ffea87; }
-  #game-stats .looter-badge .looter-avatar {
-    border: 1px solid #ff5f00;
-    background: url("../img/hackathon-assets/bg-gold.png") no-repeat center; }
-  #game-stats .looter-badge h2 {
-    font-weight: 600;
-    font-size: 24px;
-    margin: 0; }
-  #game-stats .looter-badge p {
-    font-size: 10px;
-    color: black;
-    margin: 0;
-    line-height: 1.2; }
-  #game-stats .looter-badge span {
-    padding-right: 5px; }
-
-#game-stats .ticket-box {
-  position: relative;
-  top: -225px;
-  right: -280px;
-  width: 45%;
-  z-index: 2; }
-  #game-stats .ticket-box img {
-    width: 42%;
-    position: absolute; }
-
-#game-stats .game-stats-bar {
-  background: url("../img/hackathon-assets/XpBar_Grey2.png") no-repeat center center;
-  background-size: contain;
-  position: relative;
-  padding: 25px 25px 25px 0;
-  top: -85px;
-  left: 5px;
-  z-index: 10;
-  width: 75%; }
-  #game-stats .game-stats-bar progress[value] {
-    /* Reset the default appearance */
-    padding-left: 3px;
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 10px; }
-  #game-stats .game-stats-bar progress[value]::-webkit-progress-bar {
-    background-color: #4B4A4A;
-    border-radius: 25px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
-  #game-stats .game-stats-bar progress[value]::-webkit-progress-value {
-    background-color: #ff5f00;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #f44, #ff5f00, yellow);
-    -webkit-animation: animate-stripes 5s linear infinite;
-    animation: animate-stripes 5s linear infinite; }
+#game-stats {
+  background-color: #d6d6d6; }
+  #game-stats .looter-badge {
+    position: relative;
+    z-index: 0;
+    padding-bottom: 20px;
+    background-color: #ffea87; }
+    #game-stats .looter-badge .looter-avatar {
+      border: 1px solid #ff5f00;
+      background: url("../img/hackathon-assets/bg-gold.png") no-repeat center; }
+    #game-stats .looter-badge h2 {
+      font-weight: 600;
+      font-size: 24px;
+      margin: 0; }
+    #game-stats .looter-badge p {
+      font-size: 10px;
+      color: #222;
+      margin: 0;
+      line-height: 1.2; }
+    #game-stats .looter-badge span {
+      padding-right: 5px; }
+  #game-stats .ticket-box {
+    position: relative;
+    top: -225px;
+    right: -280px;
+    width: 45%;
+    z-index: 2; }
+    #game-stats .ticket-box img {
+      width: 42%;
+      position: absolute; }
+  #game-stats .game-stats-bar {
+    background: url("../img/hackathon-assets/XpBar_Grey2.png") no-repeat center center;
+    background-size: contain;
+    position: relative;
+    padding: 25px 25px 25px 0;
+    top: -85px;
+    left: 5px;
+    z-index: 10;
+    width: 75%; }
+    #game-stats .game-stats-bar progress[value] {
+      /* Reset the default appearance */
+      padding-left: 3px;
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 10px; }
+    #game-stats .game-stats-bar progress[value]::-webkit-progress-bar {
+      background-color: #4B4A4A;
+      border-radius: 25px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
+    #game-stats .game-stats-bar progress[value]::-webkit-progress-value {
+      background-color: #ff5f00;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -webkit-linear-gradient(left, #f44, #ff5f00, yellow);
+      -webkit-animation: animate-stripes 5s linear infinite;
+      animation: animate-stripes 5s linear infinite; }
 
 @-webkit-keyframes animate-stripes {
   100% {
@@ -9796,21 +9796,63 @@ a.button {
 @keyframes animate-stripes {
   100% {
     background-position: -100px 0px; } }
+  #game-stats .rewards {
+    position: relative;
+    top: -120px;
+    z-index: 1; }
+    #game-stats .rewards .item {
+      background-color: #ffea87;
+      height: 89px; }
+      #game-stats .rewards .item.anime-sub {
+        background: url("../img/hackathon-assets/anime-sub.png") no-repeat;
+        background-size: contain; }
+      #game-stats .rewards .item.loot-sub {
+        background: url("../img/hackathon-assets/loot-sub.png") no-repeat;
+        background-size: contain; }
+      #game-stats .rewards .item.lu-sub {
+        background: url("../img/hackathon-assets/lu-sub.png") no-repeat;
+        background-size: contain; }
+    #game-stats .rewards .item-text-wrap {
+      height: 60px; }
+  #game-stats .lift-promotion {
+    position: relative;
+    top: -150px;
+    z-index: 0; }
+  #game-stats .promotion {
+    height: 290px;
+    background: url("../img/hackathon-assets/promo_gaming.jpg") no-repeat top center;
+    background-size: cover; }
 
-#game-stats .rewards {
-  position: relative;
-  top: -120px; }
-  #game-stats .rewards .item {
-    background-color: #ffea87;
-    height: 89px; }
-    #game-stats .rewards .item.anime-sub {
-      background: url("../img/hackathon-assets/anime-sub.png") no-repeat;
-      background-size: contain; }
-    #game-stats .rewards .item.loot-sub {
-      background: url("../img/hackathon-assets/loot-sub.png") no-repeat;
-      background-size: contain; }
-    #game-stats .rewards .item.lu-sub {
-      background: url("../img/hackathon-assets/lu-sub.png") no-repeat;
-      background-size: contain; }
-  #game-stats .rewards .item-text-wrap {
-    height: 60px; }
+#pick-your-crate .row {
+  border: 1px solid #222;
+  height: 33%; }
+
+#pick-your-crate .col {
+  height: 100%;
+  border: 1px solid #222; }
+
+#plans {
+  background-color: #d6d6d6; }
+  #plans .card {
+    padding-top: 10px;
+    height: 20%; }
+    #plans .card h3 {
+      color: #ff5f00;
+      font-weight: 600; }
+  #plans .btn {
+    float: right;
+    padding: 10px 8px;
+    text-decoration: none;
+    background-color: #ff5f00;
+    color: #ffffff;
+    position: relative;
+    top: -40px;
+    left: 5px;
+    border: 2px solid #ff5f00; }
+  #plans .btn:active {
+    color: #ff5f00;
+    background-color: #ffffff;
+    border: 2px solid #ff5f00; }
+
+.scroll {
+  height: 100%; }

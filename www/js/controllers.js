@@ -1,5 +1,5 @@
 angular.module('starter.controllers', [])
-.controller('GameStatesCtrl', function($scope) {})
+.controller('GameStatCtrl', function($scope) {})
 .controller('DashCtrl', function($scope) {})
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
@@ -21,6 +21,10 @@ angular.module('starter.controllers', [])
 
 .controller('SubscriptionsCtrl', function($scope, Subscriptions){
   $scope.subscriptions = Subscriptions.all();
+})
+
+.controller('CratesCtrl', function($scope, $state, Crates) {
+  $scope.crates = Crates.all();
 })
 
 .controller('AccountCtrl', function($scope) {

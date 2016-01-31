@@ -5,13 +5,18 @@ navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
   <!-- Game Stats Tab -->
-  <ion-tab title="Game Stats" icon-off="ion-ios-game-controller-a-outline" icon-on="ion-ios-game-controller-a" href="#/tab/game-stats">
+  <ion-tab title="Stats" icon-off="ion-ios-game-controller-a-outline" icon-on="ion-ios-game-controller-a" href="#/tab/game-stats">
     <ion-nav-view name="tab-game-stats"></ion-nav-view>
   </ion-tab>
 
   <!-- Dashboard Tab -->
-  <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash">
+  <ion-tab title="Crates" icon-off="ion-ios-albums-outline" icon-on="ion-ios-albums" href="#/tab/dash">
     <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="Plans" icon-off="ion-ios-bolt-outline" icon-on="ion-ios-bolt" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
   </ion-tab>
 
   <!-- Chats Tab -->
@@ -19,10 +24,7 @@ navigation history that also transitions its views in and out.
     <ion-nav-view name="tab-chats"></ion-nav-view>
   </ion-tab>
 
-  <!-- Account Tab -->
-  <ion-tab title="Account" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
-    <ion-nav-view name="tab-account"></ion-nav-view>
-  </ion-tab>
+
 
 
 </ion-tabs>

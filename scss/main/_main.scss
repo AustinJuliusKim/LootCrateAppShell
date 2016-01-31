@@ -1,8 +1,13 @@
 $orange: #ff5f00;
 $gold:   #ffea87;
 $gray-game: #4f4f4f;
+$background-color: rgba(214,214,214,1);
+$black: #222;
+$white: #ffffff;
+
 
 #game-stats {
+  background-color: $background-color;
   .looter-badge {
     position: relative;
     z-index: 0;
@@ -19,7 +24,7 @@ $gray-game: #4f4f4f;
     }
     p {
       font-size: 10px;
-      color: black;
+      color: $black;
       margin: 0;
       line-height: 1.2;
     }
@@ -87,6 +92,7 @@ $gray-game: #4f4f4f;
   .rewards {
     position: relative;
     top: -120px;
+    z-index: 1;
 
     .item {
       background-color: $gold;
@@ -108,4 +114,60 @@ $gray-game: #4f4f4f;
       height: 60px;
     }
   }
+  .lift-promotion {
+    position: relative;
+    top: -150px;
+    z-index: 0;
+  }
+  .promotion {
+    height: 290px;
+    background: url('../img/hackathon-assets/promo_gaming.jpg') no-repeat top center;
+    background-size: cover;
+  }
+
+
 }
+
+#pick-your-crate {
+  .row {
+    border: 1px solid $black;
+    height: 33%;
+  }
+  .col {
+    height: 100%;
+    border: 1px solid $black;
+  }
+}
+
+#plans {
+  background-color: $background-color;
+  .card {
+    padding-top: 10px;
+    height: 20%;
+    h3 {
+      color: $orange;
+      font-weight: 600;
+    }
+  }
+  .btn {
+    float: right;
+    padding: 10px 8px;
+    text-decoration: none;
+    background-color: $orange;
+    color: $white;
+    position: relative;
+    top: -40px;
+    left: 5px;
+    border: 2px solid $orange;
+  }
+  .btn:active {
+    color: $orange;
+    background-color: $white;
+    border: 2px solid $orange;
+  }
+}
+
+.scroll {
+  height: 100%;
+}
+
