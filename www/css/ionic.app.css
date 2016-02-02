@@ -9745,7 +9745,8 @@ a.button {
       top: 75px; }
     #game-stats .lootbadge.master-off {
       right: -320px;
-      top: 70px; }
+      top: 70px;
+      display: none; }
   #game-stats .looter-badge {
     position: relative;
     z-index: 0;
